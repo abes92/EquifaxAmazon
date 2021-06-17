@@ -1,0 +1,23 @@
+
+Scenario: search for an item                          # src/test/java/features/home.feature:4
+  Given user on amazon home page                      # stepDefinitions.homePageStepDefinition.user_on_amazon_home_page()
+  And user enter your book name on search box option  # stepDefinitions.homePageStepDefinition.user_enter_your_book_name_on_search_box_option()
+      java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at homePage.searchPage.setSearchBox(searchPage.java:33)
+	at stepDefinitions.homePageStepDefinition.user_enter_your_book_name_on_search_box_option(homePageStepDefinition.java:68)
+	at ✽.user enter your book name on search box option(file:///Users/abestaieb/InterviewQuestions/Amazon/src/test/java/features/home.feature:7)
+
+  Then user validate your book is displaying properly # stepDefinitions.homePageStepDefinition.user_validate_your_book_is_displaying_properly()
+  When user click on add to cart                      # stepDefinitions.homePageStepDefinition.user_click_on_add_to_cart()
+  And user click on cart option                       # stepDefinitions.homePageStepDefinition.user_click_on_cart_option()
+  Then user proceed to check out                      # stepDefinitions.homePageStepDefinition.user_proceed_to_check_out()
+      java.lang.NullPointerException
+	at common.WebAPI.cleanUp(WebAPI.java:247)
+	at stepDefinitions.homePageStepDefinition.closeBrowser(homePageStepDefinition.java:39)
+
+      java.lang.NullPointerException
+	at stepDefinitions.homePageStepDefinition.tearDown(homePageStepDefinition.java:32)
+

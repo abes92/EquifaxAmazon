@@ -1,0 +1,20 @@
+[
+  {
+    "source": "user on amazon home page",
+    "steps": [
+      {
+        "name": "user on amazon home page",
+        "aggregatedDurations": {
+          "median": 0.740977,
+          "average": 0.740977
+        },
+        "durations": [
+          {
+            "duration": 0.740977,
+            "location": "file:///Users/abestaieb/InterviewQuestions/Amazon/src/test/java/features/home.feature:5"
+          }
+        ]
+      }
+    ]
+  }
+]

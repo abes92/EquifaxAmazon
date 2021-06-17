@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.087">
+    <testcase classname="end to end testing" name="search for an item" time="5.884">
+        <failure message="" type="java.lang.NullPointerException"><![CDATA[Given user on amazon home page..............................................passed
+And user enter your book name on search box option..........................failed
+Then user validate your book is displaying properly.........................skipped
+When user click on add to cart..............................................skipped
+And user click on cart option...............................................skipped
+Then user proceed to check out..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at homePage.searchPage.setSearchBox(searchPage.java:33)
+	at stepDefinitions.homePageStepDefinition.user_enter_your_book_name_on_search_box_option(homePageStepDefinition.java:68)
+	at ✽.user enter your book name on search box option(file:///Users/abestaieb/InterviewQuestions/Amazon/src/test/java/features/home.feature:7)
+]]></failure>
+    </testcase>
+</testsuite>

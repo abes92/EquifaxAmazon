@@ -1,0 +1,193 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-06-17T02:33:24.681Z",
+        "line": 4,
+        "name": "search for an item",
+        "description": "",
+        "id": "end-to-end-testing;search-for-an-item",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat common.WebAPI.cleanUp(WebAPI.java:247)\n\tat stepDefinitions.homePageStepDefinition.closeBrowser(homePageStepDefinition.java:39)\n",
+              "duration": 401000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat stepDefinitions.homePageStepDefinition.tearDown(homePageStepDefinition.java:32)\n",
+              "duration": 2205000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5740977000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 40527000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.homePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user on amazon home page",
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.user_on_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy24.sendKeys(Unknown Source)\n\tat homePage.searchPage.setSearchBox(searchPage.java:33)\n\tat stepDefinitions.homePageStepDefinition.user_enter_your_book_name_on_search_box_option(homePageStepDefinition.java:68)\n\tat ✽.user enter your book name on search box option(file:///Users/abestaieb/InterviewQuestions/Amazon/src/test/java/features/home.feature:7)\n",
+              "duration": 3842000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2400000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinitions.homePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user enter your book name on search box option",
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.user_enter_your_book_name_on_search_box_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1232000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 45000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.homePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user validate your book is displaying properly",
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.user_validate_your_book_is_displaying_properly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1179000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 29000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.homePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user click on add to cart",
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.user_click_on_add_to_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1396000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 27000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.homePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user click on cart option",
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.user_click_on_cart_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 906000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 24000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepDefinitions.homePageStepDefinition.getInit()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user proceed to check out",
+            "match": {
+              "location": "stepDefinitions.homePageStepDefinition.user_proceed_to_check_out()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "end to end testing",
+    "description": "",
+    "id": "end-to-end-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/home.feature",
+    "tags": []
+  }
+]
